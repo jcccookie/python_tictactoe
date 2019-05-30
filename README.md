@@ -1,2 +1,2 @@
-# python_tictactoe
-Tic Tac Toe game in Python3
+# Tic Tac Toe Game in Python
+Tic Tac Toe game in Python for 2 players
