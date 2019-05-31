@@ -7,17 +7,17 @@ theBoard = [' '] * 10   # a list of empty spaces
 available = [str(num) for num in range(0,10)] # a List Comprehension
 players = [0,'X','O']   # note that players[1] == 'X' and players[-1] == 'O'
 
-# def display_board(a,b):
-#     print('Available   TIC-TAC-TOE\n'+
-#            '  moves\n\n  '+
-#           a[7]+'|'+a[8]+'|'+a[9]+'        '+b[7]+'|'+b[8]+'|'+b[9]+'\n  '+
-#           '-----        -----\n  '+
-#           a[4]+'|'+a[5]+'|'+a[6]+'        '+b[4]+'|'+b[5]+'|'+b[6]+'\n  '+
-#           '-----        -----\n  '+
-#           a[1]+'|'+a[2]+'|'+a[3]+'        '+b[1]+'|'+b[2]+'|'+b[3]+'\n')
-
 def display_board(a,b):
-    print(f'Available   TIC-TAC-TOE\n  moves\n\n  {a[7]}|{a[8]}|{a[9]}        {b[7]}|{b[8]}|{b[9]}\n  -----        -----\n  {a[4]}|{a[5]}|{a[6]}        {b[4]}|{b[5]}|{b[6]}\n  -----        -----\n  {a[1]}|{a[2]}|{a[3]}        {b[1]}|{b[2]}|{b[3]}\n')
+    print('Available   TIC-TAC-TOE\n'+
+           '  moves\n\n  '+
+          a[7]+'|'+a[8]+'|'+a[9]+'        '+b[7]+'|'+b[8]+'|'+b[9]+'\n  '+
+          '-----        -----\n  '+
+          a[4]+'|'+a[5]+'|'+a[6]+'        '+b[4]+'|'+b[5]+'|'+b[6]+'\n  '+
+          '-----        -----\n  '+
+          a[1]+'|'+a[2]+'|'+a[3]+'        '+b[1]+'|'+b[2]+'|'+b[3]+'\n')
+
+# def display_board(a,b):
+#     print(f'Available   TIC-TAC-TOE\n  moves\n\n  {a[7]}|{a[8]}|{a[9]}        {b[7]}|{b[8]}|{b[9]}\n  -----        -----\n  {a[4]}|{a[5]}|{a[6]}        {b[4]}|{b[5]}|{b[6]}\n  -----        -----\n  {a[1]}|{a[2]}|{a[3]}        {b[1]}|{b[2]}|{b[3]}\n')
 
 
 def place_marker(avail,board,marker,position):
