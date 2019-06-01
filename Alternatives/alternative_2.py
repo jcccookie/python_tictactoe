@@ -1,6 +1,7 @@
 # Specifically for the iPython Notebook environment for clearing output
 # from IPython.display import clear_output
 import random
+import os
 
 # Global variables
 theBoard = [' '] * 10   # a list of empty spaces
@@ -63,7 +64,7 @@ def replay():
 
 
 while True:
-   #  clear_output()
+    os.system('clear')
     print('Welcome to Tic Tac Toe!')
     
     toggle = random_player()
@@ -89,8 +90,7 @@ while True:
             else:
                 toggle *= -1
                 player = players[toggle]
-               #  clear_output()
-
+                os.system('clear')
     # reset the board and available moves list
     theBoard = [' '] * 10
     available = [str(num) for num in range(0,10)]
